@@ -6,11 +6,11 @@ import Volunteers from "@/components/Volunteers/Volunteers";
 export default function Home() {
 	return (
 		<div>
-		{/* here all function give here */}
-		<Gallery></Gallery>
+			{/* here all function give here */}
+			<Gallery></Gallery>
 			<HomeSlider></HomeSlider>
-		<BecomeVolunteer/>
-		<Volunteers/>
+			<BecomeVolunteer />
+			<Volunteers />
 		</div>
 	);
 }
