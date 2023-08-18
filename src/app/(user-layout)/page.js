@@ -10,9 +10,8 @@ export default function Home() {
 	return (
 		<div>
 			{/* here all function give here */}
-			<Gallery></Gallery>
-			<Gallery></Gallery>
 			<HomeSlider></HomeSlider>
+			<Gallery></Gallery>
 			<BecomeVolunteer />
 			<Volunteers />
 			<OurTeam />
