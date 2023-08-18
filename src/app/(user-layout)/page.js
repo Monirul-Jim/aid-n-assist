@@ -9,6 +9,8 @@ import Partner from "@/components/Partner/Partner";
 export default function Home() {
 	return (
 		<div>
+			{/* here all function give here */}
+			<Gallery></Gallery>
 			<Gallery></Gallery>
 			<HomeSlider></HomeSlider>
 			<BecomeVolunteer />
