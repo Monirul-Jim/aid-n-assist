@@ -6,8 +6,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import 'swiper/css/autoplay';
-import mainSlider from "@/data/mainSlider";
 import SingleHomeSlider from "./SingleHomeSlider";
+import mainSlider from "@/data/mainSlider";
 
 
 const HomeSlider = () => {
