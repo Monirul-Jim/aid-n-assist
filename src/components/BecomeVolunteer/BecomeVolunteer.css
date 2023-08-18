@@ -1,0 +1,12 @@
+.volunteerBackground {
+    background-image: url('../../../public/Disaster1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+@media (max-width: 767px) {
+    .volunteerBackground {
+        background-size: contain; 
+    }
+}
