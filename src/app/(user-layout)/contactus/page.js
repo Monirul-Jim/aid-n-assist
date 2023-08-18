@@ -7,7 +7,7 @@ import React from 'react';
 
 const Contactus = () => {
     return (
-        <div>
+        <div classname="">
             
             <ContactBanner></ContactBanner>
             <Contact></Contact>
