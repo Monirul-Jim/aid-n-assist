@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 const SingleVolunteer = ({volunteer}) => {
@@ -11,13 +12,16 @@ const SingleVolunteer = ({volunteer}) => {
             </a>
             <div class="p-5">
                 <a href="#">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{name}</h5>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Name:{name}</h5>
                 </a>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{email}</p>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{designation}</p>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{bloodGroup}</p>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{phoneNumber}</p>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{workPlace}</p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Email: {email}</p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Designation: {designation}</p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Blood: {bloodGroup}</p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Contact: {phoneNumber}</p>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Location: {workPlace}</p>
+                <Link href={`volunteers/${_id}`}>
+                    <button className="rounded-xl bg-green-300 px-5 py-1">Edit</button>
+                </Link>
             </div>
         </div>
 
