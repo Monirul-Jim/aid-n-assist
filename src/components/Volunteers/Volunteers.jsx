@@ -1,8 +1,8 @@
-import getVolunteers from "@/util/getVolunteers";
+import getVolunteersFromDB from "@/util/getVolunteersFromDb";
 import SingleVolunteer from "./SingleVolunteer";
 
 const Volunteers = async () => {
-    const volunteers = await getVolunteers();
+    const volunteers = await getVolunteersFromDB();
 
 
     return (

@@ -1,7 +1,7 @@
 'use client'
 
 import Image from "next/image";
-// import Swal from "sweetalert2";
+import toast from "react-hot-toast";
 import teamWork from "../../../../public/groupImage.gif"
 
 const imgToken = process.env.NEXT_PUBLIC_IMGBB_API_Token;
@@ -18,7 +18,8 @@ const Volunteers = () => {
     const img_hosting_URl = `https://api.imgbb.com/1/upload?key=${imgToken}`
 
 
-    const handleVolunteers = event => {
+
+    const handleVolunteers = async event => {
         event.preventDefault();
         const form = event.target;
         const name = form.name.value;
@@ -31,54 +32,37 @@ const Volunteers = () => {
         const formData = new FormData();
         formData.append('image', form.imageURL.files[0]);
 
-        fetch(img_hosting_URl, {
+        const imgRes = await fetch(img_hosting_URl, {
             method: "POST",
             body: formData
         })
-            .then(res => res.json())
-            .then(imageResponse => {
-                if (imageResponse.success) {
-                    const imageURL = imageResponse.data.display_url;
-                    const volunteerData = {
-                        name,
-                        email,
-                        designation,
-                        imageURL,
-                        bloodGroup,
-                        phoneNumber: parseInt(phoneNumber),
-                        workPlace
-                    };
-                    console.log({ volunteerData });
-                    fetch(`/api/allVolunteers`, {
-                        method: "POST",
-                        headers: {
-                            'content-type': 'application/json'
-                        },
-                        body: JSON.stringify(volunteerData)
-                    })
-                        .then(res => res.json())
-                        .then(result => {
-                            console.log("Server response:", result);
-                            if (result.added) {
-                                form.reset()
-                                alert("success")
-                                // Swal.fire({
-                                //     position: 'top',
-                                //     icon: 'success',
-                                //     title: 'Submitted Successfully',
-                                //     showConfirmButton: false,
-                                //     timer: 1500
-                                // })
-                            } else {
-                            }
-                        })
-                        .catch(error => {
-                            console.error(error);
-                        });
-                }
-            })
-    };
+        const imageResponse = await imgRes.json();
 
+        if (imageResponse.success) {
+            const imageURL = imageResponse.data.display_url;
+            const volunteerData = {
+                name,
+                email,
+                designation,
+                imageURL,
+                bloodGroup,
+                phoneNumber: parseInt(phoneNumber),
+                workPlace
+            };
+            console.log({ volunteerData })
+            let result = await fetch("/api/volunteers", {
+                method: "POST",
+                body: JSON.stringify(volunteerData)
+            });
+            result = await result.json();
+            if (result.success) {
+                toast.success('Successfully Added!')
+            }
+
+        }
+
+
+    };
 
 
     return (
