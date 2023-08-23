@@ -5,6 +5,7 @@ import Volunteers from "@/components/Volunteers/Volunteers";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import Causes from "@/components/PopularCauses/Causes";
 import Partner from "@/components/Partner/Partner";
+import Faq from "@/components/FAQ/Faq";
 
 export default function Home() {
 	return (

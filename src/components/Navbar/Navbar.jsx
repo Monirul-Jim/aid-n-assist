@@ -61,6 +61,7 @@ const Navbar = () => {
 						<Link href="/howwework">How we Work</Link>
 						<a href="#">Portfolio</a>
 						<Link href="/contactus">Contact Us</Link>
+						<Link href="/faq">FAQ</Link>
 						<Link href="/login" className="font-bold text-base">
 							Login
 						</Link>
@@ -133,6 +134,9 @@ const Navbar = () => {
 															</Link>
 															<Link href="/portfolio">
 																Portfolio
+															</Link>
+															<Link href="/faq">
+																FAQ
 															</Link>
 															<Link href="/contact">
 																Contact
