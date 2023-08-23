@@ -4,6 +4,7 @@ import React from "react";
 import { FreeMode, Pagination } from "swiper/modules";
 import "./style.css";
 import "swiper/css";
+import Image from "next/image";
 
 const Partner = () => {
 	return (
@@ -24,8 +25,10 @@ const Partner = () => {
 					clickable: true,
 				}}
 				modules={[FreeMode, Pagination]}
-				className="mySwiper mb-12"
-				autoplay={{ delay: 4000 }}
+				className="mySwiper mb-16"
+				autoplay={{ delay: 1000 }}
+				
+				
 				breakpoints={{
 					640: {
 						slidesPerView: 2,
@@ -42,7 +45,7 @@ const Partner = () => {
 				}}
 			>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/1.png"
@@ -51,7 +54,7 @@ const Partner = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/2.png"
@@ -60,7 +63,7 @@ const Partner = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/3.png"
@@ -69,7 +72,7 @@ const Partner = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/4.png"
@@ -78,7 +81,7 @@ const Partner = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/1.png"
@@ -87,7 +90,7 @@ const Partner = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/2.png"
@@ -96,7 +99,7 @@ const Partner = () => {
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
+					<Image
 						width={60}
 						height={60}
 						src="/partner/3.png"

@@ -5,6 +5,7 @@ import Volunteers from "@/components/Volunteers/Volunteers";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import Causes from "@/components/PopularCauses/Causes";
 import Partner from "@/components/Partner/Partner";
+import Testimonial from "@/components/testimonial/Testimonial";
 import Faq from "@/components/FAQ/Faq";
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
 			<Volunteers />
 			<OurTeam />
 			<Causes />
+			<Testimonial></Testimonial>
 			<Partner />
 
 		</div>

@@ -56,7 +56,7 @@ const Navbar = () => {
 						</h1>
 					</a>
 					<div className="hidden md:flex space-x-4">
-						<a href="#">Home</a>
+						<Link href="/">Home</Link>
 						<a href="/about">About</a>
 						<Link href="/howwework">How we Work</Link>
 						<a href="#">Portfolio</a>

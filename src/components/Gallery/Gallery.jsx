@@ -12,12 +12,10 @@ import ImageEight from "../../../public/Gallery/gallery-8.jpg";
 import Image from "next/image";
 
 const Gallery = () => {
-    const { systemTheme, theme, setTheme } = useTheme();
-    const currentTheme = theme === 'system' ? systemTheme : theme;
     
     return (
         <>
-            <section className={` py-12${currentTheme==='dark'?'black':'bg-green-100'}`}>
+            <section className={` py-12 bg-green-100`}>
             <div className="container mx-auto">
                     <h2 className="text-3xl font-semibold text-center mb-8">Our Gallery</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

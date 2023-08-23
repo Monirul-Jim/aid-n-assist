@@ -14,7 +14,7 @@ import './Faq.css'
 
 const Faq = () => {
     return (
-        <div className='my-16 md:flex gap-10 '>
+        <div className='py-16 md:flex gap-10 bg-white'>
             <div className='w-full'>
                 <Image width="300" height="200" className='w-full faqImage' src={faqImage} alt='faq image'/>
             </div>
@@ -66,6 +66,18 @@ const Faq = () => {
                         <AccordionItemPanel>
                             <p>
                             Our long-term vision is to create a global community of compassionate individuals who drive positive change through online donations. We aim to expand our reach, impact, and partnerships to address a wide range of pressing global issues.
+                            </p>
+                        </AccordionItemPanel>
+                    </AccordionItem>
+                    <AccordionItem>
+                        <AccordionItemHeading>
+                            <AccordionItemButton>
+                            How can I be sure my donation is making an impact?
+                            </AccordionItemButton>
+                        </AccordionItemHeading>
+                        <AccordionItemPanel>
+                            <p>
+                            We are committed to transparency. Aid & Assist regularly updates donors on the progress of projects and the impact of their contributions. You can track the results and see how your generosity is making a difference.
                             </p>
                         </AccordionItemPanel>
                     </AccordionItem>
