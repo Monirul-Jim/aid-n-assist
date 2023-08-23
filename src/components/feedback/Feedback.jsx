@@ -2,7 +2,8 @@
 import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 import Rate from '../Rate/Rate';
-import Testimonial from '../testimonial/Testimonial';
+
+import { toast } from 'react-hot-toast';
 
 const Feedback = () => {
     const [rating, setRating] = useState(0);
@@ -20,7 +21,7 @@ const Feedback = () => {
             name,email,feedback,Rating
         }
 
-        let res = await fetch('/api/feedback',{
+        let res = await fetch('/api/feedbacks',{
             method:"Post",
             body:JSON.stringify(feedbackdata)
         });
@@ -31,6 +32,7 @@ const Feedback = () => {
                 'You clicked the button!',
                 'success'
               )
+              form.reset()
         }
         else{
             Swal.fire(
@@ -80,9 +82,7 @@ const Feedback = () => {
 <p className="ml-auto text-xs text-gray-500 dark:text-gray-400">Remember, contributions to this topic should follow our <a href="#" className="text-blue-600 dark:text-blue-500 hover:underline">Community Guidelines</a>.</p>
 
             </div>
-            {/* testing start */}
-            <Testimonial></Testimonial>
-            {/* testing end */}
+            
         </div>
     );
 };

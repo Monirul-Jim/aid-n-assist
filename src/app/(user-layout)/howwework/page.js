@@ -42,7 +42,7 @@ const handleclick = () =>{
 </div>
 <Iframe></Iframe>
 <ProgrssbarHow></ProgrssbarHow>
-<Feedback></Feedback>
+
 </div>
 
 
