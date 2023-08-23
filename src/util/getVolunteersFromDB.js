@@ -1,10 +1,9 @@
 
 import { getVolunteersFromDb } from '@/services/volunteer.service';
 import {cache} from 'react'
-import 'server-only'
 
-const getVolunteers = cache( () => {
+const getVolunteersFromDB = cache( () => {
     return getVolunteersFromDb();
 });
 
-export default getVolunteers;
+export default getVolunteersFromDB;

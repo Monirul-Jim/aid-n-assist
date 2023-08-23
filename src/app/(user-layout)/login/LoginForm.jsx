@@ -1,5 +1,4 @@
 "use client";
-
 import GoogleLogin from "@/components/GoogleLogin";
 import useAuth from "@/hooks/useAuth";
 import createJWT from "@/util/createJWT";
@@ -94,12 +93,18 @@ const LoginForm = () => {
 			</div>
 			<p className="mt-3">
 				Don&apos;t have an account?
-				<Link className="text-emerald-600 font-bold ml-1" href="/signup">
+				<Link
+					className="text-emerald-600 font-bold ml-1"
+					href="/signup"
+				>
 					Signup
 				</Link>
 			</p>
 			<div className="divider mt-5">OR</div>
-			<GoogleLogin className="justify-center mx-auto w-full items-center" from={from} />
+			<GoogleLogin
+				className="justify-center mx-auto w-full items-center"
+				from={from}
+			/>
 		</form>
 	);
 };

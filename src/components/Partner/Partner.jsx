@@ -1,10 +1,6 @@
 "use client";
-import { Swiper, SwiperSlide } from "swiper/react";
-import React from "react";
-import { FreeMode, Pagination } from "swiper/modules";
-import "./style.css";
-import "swiper/css";
-
+import Marquee from "react-fast-marquee";
+import Image from "next/image";
 const Partner = () => {
 	return (
 		<>
@@ -15,96 +11,62 @@ const Partner = () => {
 				We believe in the power of collective effort and community
 				involvement.
 			</p>
-
-			<Swiper
-				slidesPerView={1}
-				spaceBetween={20}
-				freeMode={true}
-				pagination={{
-					clickable: true,
-				}}
-				modules={[FreeMode, Pagination]}
-				className="mySwiper mb-12"
-				autoplay={{ delay: 4000 }}
-				breakpoints={{
-					640: {
-						slidesPerView: 2,
-						spaceBetween: 30,
-					},
-					768: {
-						slidesPerView: 3,
-						spaceBetween: 40,
-					},
-					1024: {
-						slidesPerView: 5,
-						spaceBetween: 40,
-					},
-				}}
-			>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+			<Marquee behavior="" direction="">
+				<div className="mb-10">
+					<Image
+						width={300}
+						height={200}
 						src="/partner/1.png"
 						alt="img1"
 						style={{ background: "transparent" }}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+				</div>
+				<div className="mb-10">
+					<Image
+						width={300}
+						height={200}
 						src="/partner/2.png"
 						alt="img2"
 						style={{ background: "transparent" }}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+				</div>
+				<div className="mb-10">
+					<Image
+						width={300}
+						height={200}
 						src="/partner/3.png"
 						alt="img3"
 						style={{ background: "transparent" }}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+				</div>
+				<div className="mb-10">
+					<Image
+						width={300}
+						height={200}
 						src="/partner/4.png"
 						alt="img4"
 						style={{ background: "transparent" }}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+				</div>
+				<div className="mb-10">
+					<Image
+						width={300}
+						height={200}
 						src="/partner/1.png"
 						alt="img5"
 						style={{ background: "transparent" }}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+				</div>
+				<div className="mb-10">
+					<Image
+						width={300}
+						height={200}
 						src="/partner/2.png"
 						alt="img6"
 						style={{ background: "transparent" }}
 					/>
-				</SwiperSlide>
-				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
-						src="/partner/3.png"
-						alt="img7"
-						style={{ background: "transparent" }}
-					/>
-				</SwiperSlide>
-			</Swiper>
+				</div>
+			</Marquee>
 		</>
 	);
 };
