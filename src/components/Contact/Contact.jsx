@@ -42,11 +42,11 @@ const Contact = () => {
 				</h1>
 			</div>
 			<div className="lg:flex gap-14 justify-center items-center max-w-7xl mx-auto">
-				<div className="lg:w-[500px] w-96 h-96 lg:h-[500px] rounded-xl lg:mt-9">
-					<Image width={520} height={500} src={contactimage} alt="" />
+				<div className="lg:w-[650px] w-96 h-96 lg:h-[500px] rounded-xl lg:mt-9">
+					<Image width={650} height={550} src={contactimage} alt="" />
 				</div>
 				<div className="ms-10 lg:ms-0 w-[50%]">
-					<div className="bg-gray-100 border-2 p-8 rounded-md shadow-md w-[90%] mx-auto">
+					<div className="bg-gray-50 border-2 p-8 rounded-md shadow-md w-[90%] mx-auto">
 						<form
 							className="w-[100%] justify-center mt-3"
 							ref={form}
