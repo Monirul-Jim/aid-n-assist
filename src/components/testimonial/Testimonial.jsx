@@ -5,8 +5,8 @@ import frist from '../../../public/Gallery/testing.jpg'
 
 const Testimonial = () => {
     return (
-        <div>
-             <div className='lg:grid lg:gigrid-cols-2'>
+        <div className='bannersetup bg-fixed font-serif lg:h-[600px] h-96 w-full'>
+             <div className='lg:grid lg:grid-cols-2'>
                 {/* 1st */}
                 <div>
              <div className="triangle absolute inset-0 opacity-40 z-10"><h1 className='relative z-20 text-black font-extrabold'>This is a CSS3 triangle with a proper box-shadow!</h1></div>
