@@ -55,7 +55,7 @@ const Navbar = () => {
 	}, []);
 
 	return (
-		<div className="bg-white shadow-md lg:h-[82px] flex align-middle fixed top-0 left-0 right-0 z-50">
+		<div className="bg-blue-950 shadow-md text-white lg:h-[82px] flex align-middle fixed top-0 left-0 right-0 z-50">
 			<nav className="container mx-auto px-4 py-3 md:flex md:justify-between md:items-center">
 				<div className="flex items-center justify-between">
 					<Link href="/" className="flex items-center gap-2">
@@ -116,7 +116,7 @@ const Navbar = () => {
 						className={`block mt-2 md:mt-0 md:inline-block ${
 							router.pathname === "/"
 								? "text-emerald-500 font-bold"
-								: "text-black"
+								: "text-white"
 						}`}
 					>
 						Home
@@ -126,7 +126,7 @@ const Navbar = () => {
 						className={`block mt-2 md:mt-0 md:inline-block ${
 							router.pathname === "/about"
 								? "text-emerald-500 font-bold"
-								: "text-gray-700"
+								: "text-white"
 						}`}
 					>
 						About
