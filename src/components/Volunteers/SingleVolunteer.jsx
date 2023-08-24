@@ -37,7 +37,7 @@ const SingleVolunteer = ({ volunteer }) => {
 		<section className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 overflow-hidden">
 			<div className="relative">
 				<Image
-					className="rounded-t-lg h-[350px] w-96"
+					className="rounded-t-lg h-[330px] w-96"
 					src={imageURL}
 					width={380}
 					height={180}

@@ -5,13 +5,13 @@ import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 const HomeBanner = () => {
 	return (
 		<section className="max-w-6xl mx-auto pt-28">
-			<div className="flex flex-col md:flex-row md:gap-10 justify-center items-center py-6 md:py-16 rounded align-middle">
+			<div className="flex flex-col md:flex-row gap-4 md:gap-10 justify-center items-center py-6 md:py-16 rounded align-middle">
 				<div className="w-[90%]">
 					<h5 className="mb-2">About Us</h5>
 					<h1 className="font-bold text-2xl md:text-4xl">
 						We Are In A Mission To <br /> Help The Helpness
 					</h1>
-					<p className="text-base mt-3 md:mt-5 w-[92%]">
+					<p className="text-base mt-4 md:mt-5 md:w-[92%]">
 						We are a non-profit organisation in USA that works
 						towards supporting underprivileged children reach their
 						full potential - physical, mental as well as emotional.

@@ -5,12 +5,10 @@ import { BsEnvelopeHeart } from "react-icons/bs";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { RiMapPinRangeFill } from "react-icons/ri";
 
-
 const Footer = () => {
 	return (
 		<section>
-			
-			<footer className="bg-blue-950 pt-10 dark:bg-gray-900 text-white">
+			<footer className="bg-blue-900 pt-10 dark:bg-gray-900 text-white">
 				<div className="mx-auto w-[95%] max-w-screen-xl text-white">
 					<div className="grid grid-cols-1 gap-4 px-4 py-6 md:py-8 md:grid-cols-4">
 						<div>
@@ -46,7 +44,7 @@ const Footer = () => {
 								</li>
 								<li className="mb-4">
 									<a href="#" className="hover:underline">
-										About Us..
+										About Us
 									</a>
 								</li>
 								<li className="mb-4">
@@ -55,7 +53,10 @@ const Footer = () => {
 									</a>
 								</li>
 								<li className="mb-4">
-									<a href="#" className="text-white hover:underline">
+									<a
+										href="#"
+										className="text-white hover:underline"
+									>
 										Gallery
 									</a>
 								</li>
@@ -102,7 +103,6 @@ const Footer = () => {
 								thoughtful planning, design, and technical
 								implementation.
 							</p>
-
 							<form>
 								<div className="my-3">
 									<input
@@ -124,7 +124,7 @@ const Footer = () => {
 						</div>
 					</div>
 					<hr className="border-emerald-400 sm:mx-auto dark:border-gray-700 lg:my-1" />
-					<div className="px-4 py-6 bg-blue-950 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+					<div className="px-4 py-6 bg-blue-900 dark:bg-gray-700 md:flex md:items-center md:justify-between">
 						<span className="text-sm text-white dark:text-gray-300 sm:text-center">
 							© 2023{" "}
 							<a href="https://flowbite.com/">Aid&Assist</a>. All

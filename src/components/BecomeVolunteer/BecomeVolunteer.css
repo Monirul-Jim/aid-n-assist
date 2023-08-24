@@ -3,11 +3,14 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 50vh;
+	display: flex;
+	align-items: center;
 	background-position: center center;
+	justify-content: center;
 }
 
 @media (max-width: 767px) {
 	.volunteerBackground {
-		background-size: contain;
+		height: 45vh;
 	}
 }

@@ -3,11 +3,11 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 const Partner = () => {
 	return (
-		<>
+		<section className="mt-20">
 			<h2 className="text-4xl font-bold text-center pt-16 pb-6">
 				Charity Organization Worked In The Fundraising
 			</h2>
-			<p className="text-center lg:max-w-4xl mx-auto text-xl mb-12">
+			<p className="text-center lg:max-w-4xl mx-auto text-xl mb-10">
 				We believe in the power of collective effort and community
 				involvement.
 			</p>
@@ -67,7 +67,7 @@ const Partner = () => {
 					/>
 				</div>
 			</Marquee>
-		</>
+		</section>
 	);
 };
 

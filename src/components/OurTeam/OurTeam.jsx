@@ -6,9 +6,9 @@ import { IoIosLink } from "react-icons/io";
 
 const OurTeam = () => {
 	return (
-		<section>
+		<section className="mb-10">
 			<div>
-				<h1 className="text-center pt-20 pb-6 text-5xl lg:max-w-4xl font-bold mx-auto">
+				<h1 className="text-center pt-20 pb-6  text-5xl lg:max-w-4xl font-bold mx-auto">
 					Our Inspiring Volunteers
 				</h1>
 				<p className="text-center lg:max-w-4xl mx-auto text-xl mb-8">

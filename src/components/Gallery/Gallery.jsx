@@ -14,9 +14,9 @@ const Gallery = () => {
 	return (
 		<>
 			<section>
-				<div className="container mx-auto">
-					<h2 className="text-center pt-16 pb-6 text-5xl lg:max-w-4xl font-bold mx-auto">
-						Our Gallery
+				<div className="container mx-auto mt-20">
+					<h2 className="text-center pt-20 pb-6 text-5xl lg:max-w-4xl font-bold mx-auto">
+						Our <span className="text-blue-800">Gallery</span>
 					</h2>
 					<p className="text-center lg:max-w-2xl mx-auto text-xl mb-16">
 						Enhance the functionality and design of the gallery

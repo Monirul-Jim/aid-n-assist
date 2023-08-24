@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import useAuth from "@/hooks/useAuth";
 
 const Navbar = () => {
-	const router = useRouter(); // Initialize the router
+	const router = useRouter();
 	const { user, logout } = useAuth();
 	const { displayName, photoURL } = user || {};
 
@@ -54,9 +54,97 @@ const Navbar = () => {
 		};
 	}, []);
 
+	const renderDropdown = () => {
+		if (user) {
+			return (
+				<div className="relative mt-2 md:mt-0">
+					<button
+						type="button"
+						className="flex items-center text-gray-700 md:order-2"
+						id="user-menu-button"
+						aria-expanded={isOpen}
+						onClick={toggleDropdown}
+					>
+						<span className="sr-only">Open user menu</span>
+						<Image
+							width={40}
+							height={40}
+							className="rounded-full"
+							src={
+								photoURL ||
+								"https://img.freepik.com/free-icon/user_318-159711.jpg"
+							}
+							alt="user photo"
+						/>
+					</button>
+					<div
+						className={`absolute right-0 mt-2 w-48 bg-white divide-y divide-gray-100 rounded-sm shadow dark:bg-gray-700 dark:divide-gray-600 ${
+							isOpen
+								? "opacity-100 visible"
+								: "opacity-0 invisible"
+						} transition-opacity duration-300`}
+						id="user-dropdown"
+					>
+						{showSpinner ? (
+							<div className="flex justify-center p-4">
+								{/* Loading spinner */}
+							</div>
+						) : (
+							<ul
+								className="py-2"
+								aria-labelledby="user-menu-button"
+							>
+								<li>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+									>
+										Dashboard
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+									>
+										Settings
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										className="block px-4 py-2 text-sm text-black hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
+									>
+										Earnings
+									</a>
+								</li>
+								<li>
+									<button
+										onClick={handleLogOut}
+										className="block px-5 py-2 ms-4 text-sm text-white bg-emerald-500 hover:bg-emerald-600 hover:text-white"
+									>
+										Logout
+									</button>
+								</li>
+							</ul>
+						)}
+					</div>
+				</div>
+			);
+		}
+		return (
+			<Link
+				href="/login"
+				className="block px-5 py-2 mt-2 md:ms-4 rounded-sm font-semibold text-sm text-white bg-emerald-500 hover:bg-emerald-600 hover:text-white"
+			>
+				Login
+			</Link>
+		);
+	};
+
 	return (
-		<div className="bg-blue-950 shadow-md text-white lg:h-[82px] flex align-middle fixed top-0 left-0 right-0 z-50">
-			<nav className="container mx-auto px-4 py-3 md:flex md:justify-between md:items-center">
+		<div className="bg-blue-900 shadow-md text-white h-[65px] lg:h-[85px] flex fixed top-0 left-0 right-0 z-50">
+			<nav className="container mx-auto px-4 py-3 md:flex md:items-center md:justify-between">
 				<div className="flex items-center justify-between">
 					<Link href="/" className="flex items-center gap-2">
 						<Image
@@ -66,7 +154,7 @@ const Navbar = () => {
 							height={35}
 							className="w-8 h-8"
 						/>
-						<h1 className="text-emerald-600 font-extrabold text-xl">
+						<h1 className="text-emerald-500 font-extrabold text-xl">
 							aid<span className="text-3xl">N</span>assist
 						</h1>
 					</Link>
@@ -107,118 +195,71 @@ const Navbar = () => {
 					</div>
 				</div>
 				<div
-					className={`md:flex md:space-x-4 ${
-						mobileMenuOpen ? "block" : "hidden"
-					} ${user ? "bg-white" : "bg-opacity-90"}`} 
+					className={`md:flex items-center md:space-x-6 ${
+						mobileMenuOpen ? "block bg-blue-900" : "hidden"
+					} ${
+						user
+							? "bg-white ml-32 shadow-lg md:bg-transparent p-4"
+							: "bg-opacity-40"
+					}`}
 				>
 					<Link
 						href="/"
-						className={`block mt-2 md:mt-0 md:inline-block ${
+						className={`flex justify-end mt-2 md:mt-0 md:inline-block ${
 							router.pathname === "/"
-								? "text-emerald-500 font-bold"
-								: "text-white"
+								? "text-white"
+								: "text-emerald-500 bg-slate-100 md:bg-transparent py-2 rounded-sm pe-3 font-bold"
 						}`}
 					>
 						Home
 					</Link>
+
 					<Link
 						href="/about"
-						className={`block mt-2 md:mt-0 md:inline-block ${
+						className={`flex justify-end mt-2 md:mt-0 md:inline-block ${
 							router.pathname === "/about"
 								? "text-emerald-500 font-bold"
-								: "text-white"
+								: "text-black md:text-white bg-slate-100 md:bg-transparent py-2 rounded-sm pe-3 font-bold"
 						}`}
 					>
 						About
 					</Link>
+
 					<Link
 						href="/howwework"
-						className="block mt-2 md:mt-0 md:inline-block"
+						className={`flex justify-end mt-2 md:mt-0 md:inline-block ${
+							router.pathname === "/about"
+								? "text-emerald-500 font-bold"
+								: "text-black md:text-white bg-slate-100 md:bg-transparent py-2 rounded-sm pe-3 font-bold"
+						}`}
 					>
 						How we Work
 					</Link>
 
 					<Link
 						href="/contactus"
-						className="block mt-2 md:mt-0 md:inline-block"
+						className={`flex justify-end mt-2 md:mt-0 md:inline-block ${
+							router.pathname === "/about"
+								? "text-emerald-500 font-bold"
+								: "text-black md:text-white bg-slate-100 md:bg-transparent py-2 rounded-sm pe-3 font-bold"
+						}`}
 					>
 						Contact Us
 					</Link>
-					<Link href="/login" className="font-bold text-base">
-						Login
-					</Link>
-					<div className="relative mt-2 md:mt-0">
-						<button
-							type="button"
-							className="flex items-center text-gray-700 md:order-2"
-							id="user-menu-button"
-							aria-expanded={isOpen}
-							onClick={toggleDropdown}
-						>
-							<span className="sr-only">Open user menu</span>
-							<Image
-								width={30}
-								height={30}
-								className="rounded-full"
-								src={
-									photoURL ||
-									"https://img.freepik.com/free-icon/user_318-159711.jpg"
-								}
-								alt="user photo"
-							/>
-						</button>
-						<div
-							className={`absolute right-0 mt-2 w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600 ${
-								isOpen
-									? "opacity-100 visible"
-									: "opacity-0 invisible"
-							} transition-opacity duration-300`}
-							id="user-dropdown"
-						>
-							{showSpinner ? (
-								<div className="flex justify-center p-4">
-									{/* Loading spinner */}
-								</div>
-							) : (
-								<ul
-									className="py-2"
-									aria-labelledby="user-menu-button"
-								>
-									<li>
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-										>
-											Dashboard
-										</a>
-									</li>
-									<li>
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-										>
-											Settings
-										</a>
-									</li>
-									<li>
-										<a
-											href="#"
-											className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-										>
-											Earnings
-										</a>
-									</li>
-									<li>
-										<button
-											onClick={handleLogOut}
-											className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white"
-										>
-											Logout
-										</button>
-									</li>
-								</ul>
-							)}
-						</div>
+
+					<div className="flex justify-end">
+						{user ? (
+							renderDropdown()
+						) : (
+							<Link
+								href="/login"
+								className="block mt-2 md:mt-0 md:inline-block"
+							>
+								<button className="px-5 py-2 text-sm font-semibold text-white bg-emerald-500 hover:bg-emerald-600 hover:text-white">
+									Login
+								</button>
+							</Link>
+						)}
 					</div>
 				</div>
 			</nav>

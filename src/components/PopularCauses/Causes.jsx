@@ -4,7 +4,7 @@ import Image from "next/image";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { HiOutlineHeart } from "react-icons/hi";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const Causes = () => {
@@ -13,7 +13,7 @@ const Causes = () => {
 			<div className="flex flex-col md:flex-row items-center md:justify-between max-w-7xl mx-auto">
 				<div className="mb-5">
 					<h1 className="sm:text-4xl lg:d-done text-4xl lg:text-5xl font-bold pt-16">
-						Recent Causes
+						Recent <span className="text-blue-800">Causes</span>
 					</h1>
 					<p className="text-[20px] leading-7 max-w-[550px] pt-4 pb-6 me-auto">
 						Actively involved in a variety of causes that address
@@ -32,13 +32,13 @@ const Causes = () => {
 				</div>
 			</div>
 
-			<div className="flex justify-center items-center gap-8 max-w-7xl animate-slide mx-auto align-middle">
+			<div className="flex flex-col lg:flex-row justify-center items-center gap-8 max-w-7xl animate-slide mx-auto align-middle">
 				<div className="max-w-xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
 					<Link href="#">
 						<Image
 							src="/causes/cause-2.jpg"
 							alt="causeImg1"
-							width={400}
+							width={420}
 							height={300}
 							className="rounded-t-md"
 						/>
@@ -88,7 +88,7 @@ const Causes = () => {
 						<Image
 							src="/causes/cause-5.jpg"
 							alt="causeImg1"
-							width={400}
+							width={420}
 							height={300}
 							className="rounded-t-md"
 						/>
@@ -110,14 +110,12 @@ const Causes = () => {
 							<div className="font-bold">
 								Goal:
 								<span className="text-emerald-500 font-bold">
-									{" "}
 									$800
 								</span>
 							</div>
 							<div className="font-bold">
 								Raised:
 								<span className="text-emerald-500 font-bold">
-									{" "}
 									$2200
 								</span>
 							</div>
@@ -138,7 +136,7 @@ const Causes = () => {
 						<Image
 							src="/causes/charity.jpg"
 							alt="causeImg3"
-							width={450}
+							width={420}
 							height={300}
 							className="rounded-t-md"
 						/>

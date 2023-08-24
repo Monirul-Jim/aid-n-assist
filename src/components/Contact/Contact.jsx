@@ -41,11 +41,11 @@ const Contact = () => {
 					Contact Us
 				</h1>
 			</div>
-			<div className="lg:flex gap-14 justify-center items-center max-w-7xl mx-auto">
-				<div className="lg:w-[650px] w-96 h-96 lg:h-[500px] rounded-xl lg:mt-9">
-					<Image width={650} height={550} src={contactimage} alt="" />
+			<div className="md:flex gap-4 lg:gap-14 justify-center items-center max-w-7xl mx-auto">
+				<div className="lg:w-[650px] md:w-[550px] w-[400px] h-96 lg:h-[500px] rounded-xl mx-auto lg:mt-9">
+					<Image width={750} height={550} src={contactimage} alt="" />
 				</div>
-				<div className="ms-10 lg:ms-0 w-[50%]">
+				<div className="lg:ms-10 md:ms-0 lg:w-[50%] md:w-[70%]">
 					<div className="bg-gray-50 border-2 p-8 rounded-md shadow-md w-[90%] mx-auto">
 						<form
 							className="w-[100%] justify-center mt-3"
@@ -84,9 +84,9 @@ const Contact = () => {
 							<div className="mt-3">
 								<button
 									type="submit"
-									className="w-full bg-green-400 hover:bg-green-500 text-white rounded-md p-3 flex items-center justify-center"
+									className="w-full bg-emerald-500 hover:bg-emerald-600 font-bold text-white rounded-md p-3 flex items-center justify-center"
 								>
-									<FaTelegramPlane className="mr-2" />
+									<FaTelegramPlane className="mr-2 text-base" />
 									Send
 								</button>
 							</div>
