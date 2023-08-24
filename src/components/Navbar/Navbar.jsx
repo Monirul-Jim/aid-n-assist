@@ -10,7 +10,6 @@ const Navbar = () => {
 	const router = useRouter();
 	const { user, logout } = useAuth();
 	const { displayName, photoURL } = user || {};
-
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const toggleMobileMenu = () => {
 		setMobileMenuOpen(!mobileMenuOpen);
@@ -19,7 +18,6 @@ const Navbar = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const [showSpinner, setShowSpinner] = useState(false);
 	const [navbarTransparent, setNavbarTransparent] = useState(true);
-
 	const toggleDropdown = () => {
 		setShowSpinner(true);
 		setTimeout(() => {
