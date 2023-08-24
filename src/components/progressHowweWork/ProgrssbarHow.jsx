@@ -1,3 +1,26 @@
+// import React from 'react';
+
+// const ProgrssbarHow = () => {
+//     return (
+//         <div className='my-5'>
+//             <h1 className='lg:text-5xl text-3xl font-serif text-gray-600'>We are waste money from our Found this way</h1>
+//             <div>
+//                 {/* div  start */}
+//                 <div className="flex justify-between mb-1">
+//   <span className="text-base font-medium text-blue-700 dark:text-white">Flowbite</span>
+//   <span className="text-sm font-medium text-blue-700 dark:text-white">45%</span>
+// </div>
+// <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+//   <div className="bg-gray-600 h-2.5 rounded-full dark:bg-gray-300" style="width: 45%"></div>
+// </div>
+//                 {/* div finish */}
+//             </div>
+//         </div>
+//     );
+// };
+
+// export default ProgrssbarHow;
+
 
 import React from 'react';
 
@@ -62,9 +85,6 @@ const ProgrssbarHow = () => {
                 </div>
                 </div>
                 {/* div finish */}
-                {/* Start */}
-                
-                {/* End */}
             </div>
         </div>
 
