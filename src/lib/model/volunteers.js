@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-
 const volunteersModel = new mongoose.Schema({
     name: String,
     imageURL: String,

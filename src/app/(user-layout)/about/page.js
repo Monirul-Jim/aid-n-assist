@@ -7,10 +7,10 @@ const About = () => {
     return (
         <div className='p-2 md:p-0'>
         {/* banner section start */}
-            <div className='banner_section relative bg-blue-300'>
+            <div className='banner_section relative bg-green-300'>
                 <div className='container mx-auto text-center py-40 '>
-                    <h1 className='text-black text-3xl md:text-5xl font-semibold'>A Few Words About <br/> <span className='text-green-400'>Aid & Assist</span></h1>
-                    <p className='text-white mt-4 w-full lg:w-3/4 mx-auto'>Welcome to Aid & Assist! Unite with us in making a difference. Your online donations empower impactful change, touching lives and fostering hope worldwide. Together, we transform compassion into action. Thank you for being part of our mission.</p>
+                    <h1 className='text-white text-3xl md:text-5xl font-semibold uppercase'>A few words about <br/> our charity</h1>
+                    <p className='text-white mt-4 w-full lg:w-3/4 mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utommodo consequat.</p>
                 </div>
                 <div className='style_image'>
                     <Image className='absolute top-0 right-0 rotate-180 w-1/3 md:w-[170px] lg:w-[300px]' width="300" height="300" src={Overlay} alt='overlay image'/>
@@ -42,23 +42,24 @@ const About = () => {
                     <div className='md:flex gap-10 justify-between'>
                         <div className=''>
                             <h1 className='text-slate-900 text-2xl md:text-3xl font-semibold '>Our Vision</h1>
-                            <p className='text-slate-600 mt-4'>Our vision at Aid & Assist is a world transformed by empathy. We envision equal opportunities for all, fueled by online donations that bridge gaps and empower communities.</p>
-                            <p className='text-slate-600 mt-4'>Together, were weaving a future where compassion drives lasting change. Join us in turning this vision into a reality.</p>
+                            <p className='text-slate-600 mt-4'>Adipiscing aliquam orci sed suspendisse convallis venenatis congue. Facilisi scelerisque donec in libero et hendrerit. At nulla lorem a non maecenas.</p>
+                            <p className='text-slate-600 mt-4'>Ipsum interdum tristique ac risus in libero. Odio id commodo cursus etiam. Ultricies sed eget mauris, nisl. Amet.</p>
                         </div>
                         <div className='mt-10 md:mt-0'>
                             <h1 className='text-slate-900 text-2xl md:text-3xl font-semibold '>Our Mission</h1>
-                            <p className='text-slate-600 mt-4'>Our mission at Aid & Assist is to harness the potential of online donations, directing them towards impactful projects that uplift underserved communities, provide essential aid during crises, and create sustainable change. </p>
-                            <p className='text-slate-600 mt-4'> We are dedicated to making giving accessible, transparent, and effective, fostering a global network of positive transformation.</p>
+                            <p className='text-slate-600 mt-4'>Adipiscing aliquam orci sed suspendisse convallis venenatis congue. Facilisi scelerisque donec in libero et hendrerit. At nulla lorem a non maecenas.</p>
+                            <p className='text-slate-600 mt-4'>Ipsum interdum tristique ac risus in libero. Odio id commodo cursus etiam. Ultricies sed eget mauris, nisl. Amet.</p>
                         </div>
                         <div className='mt-10 md:mt-0'>
                             <h1 className='text-slate-900 text-2xl md:text-3xl font-semibold '>Our Goal</h1>
-                            <p className='text-slate-600 mt-4'>Our goal at Aid & Assist is to inspire and facilitate meaningful giving through online donations. We aim to raise awareness, mobilize resources, and drive positive change in various domains such as education, healthcare, disaster relief, and community development. </p>
-                            <p className='text-slate-600 mt-4'>Together, we strive to create a more equitable and compassionate world.</p>
+                            <p className='text-slate-600 mt-4'>Adipiscing aliquam orci sed suspendisse convallis venenatis congue. Facilisi scelerisque donec in libero et hendrerit. At nulla lorem a non maecenas.</p>
+                            <p className='text-slate-600 mt-4'>Ipsum interdum tristique ac risus in libero. Odio id commodo cursus etiam. Ultricies sed eget mauris, nisl. Amet.</p>
                         </div>
                     </div>
                 </div>
             </div>
             {/* our mission vision and goal section end  */}
+
         </div>
     );
 };
