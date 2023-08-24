@@ -1,9 +1,10 @@
 import React from 'react';
+import DashboardSidebar from './DashboardSidebar/DashboardSidebar';
 
 const DashboardLayout = ({children}) => {
     return (
         <div>
-            <h1>This is dashboard sidebar</h1>
+            <DashboardSidebar/>
             {children}
         </div>
     );

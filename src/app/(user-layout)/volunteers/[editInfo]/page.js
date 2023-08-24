@@ -1,14 +1,14 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import "./UpdateVolunteerData.css";
 
 const UpdateVolunteerData = (props) => {
 	const [volunteerData, setVolunteerData] = useState(null);
 
 	useEffect(() => {
 		getSpecificData();
-	});
+	}, []);
 
 	const getSpecificData = async () => {
 		let vol_Id = props.params.editInfo;
@@ -44,12 +44,9 @@ const UpdateVolunteerData = (props) => {
 	};
 
 	return (
-		<div className="update-form-container align-middle">
+		<div className="p-10">
 			{volunteerData && (
-				<form onSubmit={handleUpdateInfo} className="custom-form">
-					<h2 className="form-title pb-10 text-center">
-						Update Volunteer Information
-					</h2>
+				<form onSubmit={handleUpdateInfo}>
 					<div className="relative z-0 w-full mb-6 group">
 						<input
 							defaultValue={volunteerData.name}
@@ -57,7 +54,7 @@ const UpdateVolunteerData = (props) => {
 							name="name"
 							id="name"
 							className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-400 focus:outline-none focus:ring-0 focus:border-green-400 peer"
-							placeholder=""
+							placeholder=" "
 							required
 						/>
 						<label
@@ -95,7 +92,7 @@ const UpdateVolunteerData = (props) => {
 								name="phoneNumber"
 								id="phoneNumber"
 								className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-400 focus:outline-none focus:ring-0 focus:border-green-400 peer"
-								placeholder=""
+								placeholder=" "
 								required
 							/>
 							<label
@@ -114,7 +111,7 @@ const UpdateVolunteerData = (props) => {
 							name="workPlace"
 							id="workPlace"
 							className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-green-400 focus:outline-none focus:ring-0 focus:border-green-400 peer"
-							placeholder=""
+							placeholder=" "
 							required
 						/>
 						<label

@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import toast from "react-hot-toast";
-import teamWork from "../../../../public/groupImage.gif";
+import teamWork from "../../../../public/groupImage.gif"
+
 const imgToken = process.env.NEXT_PUBLIC_IMGBB_API_Token;
 
 //---- For Getting the environment variables we have to use [process.env.key_name] instead of [import.meta.env.key_name] in NEXT JS -source NEXT JS  Environment Variables Docs----//
@@ -11,18 +12,15 @@ const imgToken = process.env.NEXT_PUBLIC_IMGBB_API_Token;
 const Volunteers = () => {
 	const img_hosting_URl = `https://api.imgbb.com/1/upload?key=${imgToken}`;
 
-	const handleVolunteers = async (event) => {
-		event.preventDefault();
-		const form = event.target;
-		const name = form.name.value;
-		const email = form.email.value;
-		const designation = form.designation.value;
-		const bloodGroup = form.bloodGroup.value;
-		const phoneNumber = form.phoneNumber.value;
-		const workPlace = form.workPlace.value;
-
-		const formData = new FormData();
-		formData.append("image", form.imageURL.files[0]);
+    const handleVolunteers = async event => {
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const designation = form.designation.value;
+        const bloodGroup = form.bloodGroup.value;
+        const phoneNumber = form.phoneNumber.value;
+        const workPlace = form.workPlace.value;
 
 		const imgRes = await fetch(img_hosting_URl, {
 			method: "POST",
