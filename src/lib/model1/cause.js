@@ -12,5 +12,3 @@ const causeModel = new mongoose.Schema({
 export const Cause =
 	mongoose.models.causes || mongoose.model("causes", causeModel);
 
-/* export const Volunteers =
-	mongoose.models.volunteers || mongoose.model("volunteers", volunteersModel); */
