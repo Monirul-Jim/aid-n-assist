@@ -4,6 +4,7 @@ import React from "react";
 import { FreeMode, Pagination } from "swiper/modules";
 import "./style.css";
 import "swiper/css";
+import Image from "next/image";
 
 const Partner = () => {
 	return (
@@ -24,8 +25,10 @@ const Partner = () => {
 					clickable: true,
 				}}
 				modules={[FreeMode, Pagination]}
-				className="mySwiper mb-12"
-				autoplay={{ delay: 4000 }}
+				className="mySwiper mb-16"
+				autoplay={{ delay: 1000 }}
+				
+				
 				breakpoints={{
 					640: {
 						slidesPerView: 2,
@@ -42,63 +45,63 @@ const Partner = () => {
 				}}
 			>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/1.png"
 						alt="img1"
 						style={{ background: "transparent" }}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/2.png"
 						alt="img2"
 						style={{ background: "transparent" }}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/3.png"
 						alt="img3"
 						style={{ background: "transparent" }}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/4.png"
 						alt="img4"
 						style={{ background: "transparent" }}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/1.png"
 						alt="img5"
 						style={{ background: "transparent" }}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/2.png"
 						alt="img6"
 						style={{ background: "transparent" }}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
-					<img
-						width={60}
-						height={60}
+					<Image
+						width={260}
+						height={160}
 						src="/partner/3.png"
 						alt="img7"
 						style={{ background: "transparent" }}
