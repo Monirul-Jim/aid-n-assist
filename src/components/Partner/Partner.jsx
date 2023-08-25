@@ -46,8 +46,8 @@ const Partner = () => {
 			>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/1.png"
 						alt="img1"
 						style={{ background: "transparent" }}
@@ -55,8 +55,8 @@ const Partner = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/2.png"
 						alt="img2"
 						style={{ background: "transparent" }}
@@ -64,8 +64,8 @@ const Partner = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/3.png"
 						alt="img3"
 						style={{ background: "transparent" }}
@@ -73,8 +73,8 @@ const Partner = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/4.png"
 						alt="img4"
 						style={{ background: "transparent" }}
@@ -82,8 +82,8 @@ const Partner = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/1.png"
 						alt="img5"
 						style={{ background: "transparent" }}
@@ -91,8 +91,8 @@ const Partner = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/2.png"
 						alt="img6"
 						style={{ background: "transparent" }}
@@ -100,8 +100,8 @@ const Partner = () => {
 				</SwiperSlide>
 				<SwiperSlide>
 					<Image
-						width={60}
-						height={60}
+						width={260}
+						height={160}
 						src="/partner/3.png"
 						alt="img7"
 						style={{ background: "transparent" }}

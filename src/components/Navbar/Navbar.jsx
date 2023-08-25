@@ -59,7 +59,7 @@ const Navbar = () => {
 						<Link href="/">Home</Link>
 						<a href="/about">About</a>
 						<Link href="/howwework">How we Work</Link>
-						<a href="#">Portfolio</a>
+						<a href="/event">Event</a>
 						<Link href="/contactus">Contact Us</Link>
 						<Link href="/faq">FAQ</Link>
 						<Link href="/login" className="font-bold text-base">
