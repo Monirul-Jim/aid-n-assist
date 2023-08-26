@@ -14,13 +14,13 @@ const ContactBanner = () => {
   <hr className="border-t-4 border-green-900 rounded-2xl mt-4 w-1/12 mx-auto" />
  
 				<div className="text-white mt-2 font-semibold relative z-10 text-sm">
-					<Link href="/">Home</Link>
+					<Link href="/">HOME</Link>
 					<span className="mx-2">/</span>
 					<Link
 						href="/contactus"
 						className="hover:text-white transition-all"
 					>
-						Contact Us
+						CONTACT US
 					</Link>
 				</div>
 </div>
