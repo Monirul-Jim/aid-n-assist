@@ -1,5 +1,6 @@
 import React from 'react';
 import './contactb.css'
+import Link from 'next/link';
 
 const ContactBanner = () => {
     return (
@@ -11,6 +12,17 @@ const ContactBanner = () => {
     Contact Us
   </h2>
   <hr className="border-t-4 border-green-900 rounded-2xl mt-4 w-1/12 mx-auto" />
+ 
+				<div className="text-white mt-2 font-semibold relative z-10 text-sm">
+					<Link href="/">Home</Link>
+					<span className="mx-2">/</span>
+					<Link
+						href="/contactus"
+						className="hover:text-white transition-all"
+					>
+						Contact Us
+					</Link>
+				</div>
 </div>
 
             {/* g */}
