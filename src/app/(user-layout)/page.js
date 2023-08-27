@@ -5,6 +5,7 @@ import Volunteers from "@/components/Volunteers/Volunteers";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import Causes from "@/components/PopularCauses/Causes";
 import Partner from "@/components/Partner/Partner";
+import DonateNow from "@/components/DonateNow/DonateNow";
 import Testimonial from "@/components/testimonial/Testimonial";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
 		<div>
 			{/* here all function give here */}
 			<HomeSlider></HomeSlider>
+			<DonateNow/>
 			<Gallery></Gallery>
 			<BecomeVolunteer />
 			<Volunteers />

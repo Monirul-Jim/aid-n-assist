@@ -5,7 +5,7 @@ import AboutImage from '../../../../public/Gallery/gallery-3.jpg'
 
 const About = () => {
     return (
-        <div className='p-2 md:p-0'>
+        <div className={`p-2 md:p-0 `}>
         {/* banner section start */}
             <div className='banner_section relative bg-blue-300'>
                 <div className='container mx-auto text-center py-40 '>
