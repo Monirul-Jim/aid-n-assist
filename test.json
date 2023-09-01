@@ -1,0 +1,465 @@
+// // volanteer
+
+// [
+//     {
+//         "name": "John Doe",
+//         "email": "john@example.com",
+//         "designation": "Volunteer",
+//         "blood": "A+",
+//         "contact": "123-456-7890",
+//         "location": "New York, USA",
+//         "imageUrl": "https://i.ibb.co/sgW4YgY/eignt.png",
+//         "blog_title": "Passionate About Positive Impact",
+//         "blog_content": "Passionate about community service and making a positive impact. Join me in my journey as I volunteer for various causes. Together, we can create a better world."
+//     },
+//     {
+//         "name": "Jane Smith",
+//         "email": "jane@example.com",
+//         "designation": "Volunteer",
+//         "blood": "O-",
+//         "contact": "987-654-3210",
+//         "location": "Los Angeles, USA",
+//         "imageUrl": "https://i.ibb.co/hKGfN3z/eleven.png",
+//         "blog_title": "Committed to Giving Back",
+//         "blog_content": "Committed to giving back to the community through volunteer work. Let's work together to bring positive change and help those in need."
+//     },
+//     {
+//         "name": "Michael Johnson",
+//         "email": "michael@example.com",
+//         "designation": "Volunteer",
+//         "blood": "B+",
+//         "contact": "555-123-4567",
+//         "location": "San Francisco, USA",
+//         "imageUrl": "https://i.ibb.co/YtWDPX5/five.png",
+//         "blog_title": "Advocating for Social Causes",
+//         "blog_content": "Advocating for social causes and dedicating time to make a difference. Join me in my volunteering efforts to create a more inclusive and compassionate society."
+//     },
+//     {
+//         "name": "Emily Davis",
+//         "email": "emily@example.com",
+//         "designation": "Volunteer",
+//         "blood": "AB-",
+//         "contact": "789-456-1230",
+//         "location": "Chicago, USA",
+//         "imageUrl": "https://i.ibb.co/601Sfgt/four.png",
+//         "blog_title": "Volunteering for a Better World",
+//         "blog_content": "Volunteering is my way of contributing to the greater good. Let's stand together and bring positive change to the lives of those who need it most."
+//     },
+//     {
+//         "name": "William Wilson",
+//         "email": "william@example.com",
+//         "designation": "Volunteer",
+//         "blood": "A-",
+//         "contact": "234-567-8901",
+//         "location": "Houston, USA",
+//         "imageUrl": "https://i.ibb.co/VNsk4Tv/nine.png",
+//         "blog_title": "Empowering Through Volunteerism",
+//         "blog_content": "Empowering communities through volunteer initiatives. Your support matters. Let's make a difference and create lasting impact."
+//     },
+//     {
+//         "name": "Olivia Brown",
+//         "email": "olivia@example.com",
+//         "designation": "Volunteer",
+//         "blood": "B-",
+//         "contact": "890-123-4567",
+//         "location": "Miami, USA",
+//         "imageUrl": "https://i.ibb.co/sgW4YgY/eignt.png",
+//         "blog_title": "Together for Positive Change",
+//         "blog_content": "Together, we can achieve incredible things. Join me in my journey as a volunteer, where every action contributes to positive change in society."
+//     },
+//     {
+//         "name": "James Miller",
+//         "email": "james@example.com",
+//         "designation": "Volunteer",
+//         "blood": "O+",
+//         "contact": "456-789-0123",
+//         "location": "Seattle, USA",
+//         "imageUrl": "https://i.ibb.co/hZ9DP1t/one.jpg",
+//         "blog_title": "Making the World Better",
+//         "blog_content": "Making the world a better place through volunteer work. Every effort counts. Let's create a ripple effect of kindness and compassion."
+//     },
+//     {
+//         "name": "Sophia Johnson",
+//         "email": "sophia@example.com",
+//         "designation": "Volunteer",
+//         "blood": "AB+",
+//         "contact": "567-890-1234",
+//         "location": "Denver, USA",
+//         "imageUrl": "https://i.ibb.co/PG77kbW/seven.jpg",
+//         "blog_title": "Passionate About Volunteerism",
+//         "blog_content": "Passionate about volunteerism and its power to transform lives. Join me in giving back and spreading positivity in our communities."
+//     },
+//     {
+//         "name": "Ethan Davis",
+//         "email": "ethan@example.com",
+//         "designation": "Volunteer",
+//         "blood": "B+",
+//         "contact": "678-901-2345",
+//         "location": "Portland, USA",
+//         "imageUrl": "https://i.ibb.co/zJgqMKx/six.png",
+//         "blog_title": "Dedicated to Positive Impact",
+//         "blog_content": "Dedicated to volunteering and making a meaningful impact. Let's create a brighter future by working together for the betterment of society."
+//     },
+//     {
+//         "name": "Ava Wilson",
+//         "email": "ava@example.com",
+//         "designation": "Volunteer",
+//         "blood": "A+",
+//         "contact": "789-012-3456",
+//         "location": "Austin, USA",
+//         "imageUrl": "https://i.ibb.co/TqW95Cs/ten.jpg",
+//         "blog_title": "Advocating for Positive Change",
+//         "blog_content": "Advocating for positive change through volunteer work. Together, we can inspire and uplift others while making a difference."
+//     },
+//     {
+//         "name": "Liam Taylor",
+//         "email": "liam@example.com",
+//         "designation": "Volunteer",
+//         "blood": "O-",
+//         "contact": "890-123-4567",
+//         "location": "Boston, USA",
+//         "imageUrl": "https://i.ibb.co/52WS8jc/three.webp",
+//         "blog_title": "Contributing Through Volunteerism",
+//         "blog_content": "Volunteering is a way to contribute to a better world. Let's join forces and create a positive impact that resonates within our communities."
+//     },
+//     {
+//         "name": "Mia Anderson",
+//         "email": "mia@example.com",
+//         "designation": "Volunteer",
+//         "blood": "AB-",
+//         "contact": "901-234-5678",
+//         "location": "Nashville, USA",
+//         "imageUrl": "https://i.ibb.co/YtWDPX5/five.png",
+//         "blog_title": "Shaping a Brighter Future",
+//         "blog_content": "Driven by the belief that volunteering can shape a brighter future. Join me in making a difference through actions that inspire change."
+//     },
+//     {
+//         "name": "Noah Martinez",
+//         "email": "noah@example.com",
+//         "designation": "Volunteer",
+//         "blood": "A-",
+//         "contact": "123-456-7890",
+//         "location": "Phoenix, USA",
+//         "imageUrl": "https://i.ibb.co/dGMPGkw/Two.jpg",
+//         "blog_title": "Committed to Positive Transformations",
+//         "blog_content": "Committed to volunteerism and its potential to bring about positive transformations. Let's stand together to create a world filled with kindness and compassion."
+//     },
+//     {
+//         "name": "Isabella Clark",
+//         "email": "isabella@example.com",
+//         "designation": "Volunteer",
+//         "blood": "B-",
+//         "contact": "234-567-8901",
+//         "location": "Atlanta, USA",
+//         "imageUrl": "https://i.ibb.co/52WS8jc/three.webp",
+//         "blog_title": "Joining the Volunteer Movement",
+//         "blog_content": "Join me in my journey as a volunteer, where every effort counts in making the world a better place. Together, we can create lasting impact."
+//     },
+//     {
+//         "name": "Jameson Lee",
+//         "email": "jameson@example.com",
+//         "designation": "Volunteer",
+//         "blood": "O+",
+//         "contact": "345-678-9012",
+//         "location": "Dallas, USA",
+//         "imageUrl": "https://i.ibb.co/sgW4YgY/eignt.png",
+//         "blog_title": "Collaborating for Positive Impact",
+//         "blog_content": "Advocating for positive change through volunteer work. Let's work together to bring about meaningful impact and inspire others to join us."
+//     },
+//     {
+//         "name": "Sofia Hernandez",
+//         "email": "sofia@example.com",
+//         "designation": "Volunteer",
+//         "blood": "AB+",
+//         "contact": "456-789-0123",
+//         "location": "Miami, USA",
+//         "imageUrl": "https://i.ibb.co/hKGfN3z/eleven.png",
+//         "blog_title": "Spreading Compassion Through Volunteering",
+//         "blog_content": "Passionate about making a difference through volunteerism. Together, we can create a world where compassion and positive change thrive."
+//     },
+//     {
+//         "name": "Elijah Adams",
+//         "email": "elijah@example.com",
+//         "designation": "Volunteer",
+//         "blood": "B+",
+//         "contact": "567-890-1234",
+//         "location": "Chicago, USA",
+//         "imageUrl": "https://i.ibb.co/YtWDPX5/five.png",
+//         "blog_title": "Empowering Through Volunteer Initiatives",
+//         "blog_content": "Empowering communities through volunteer initiatives. Let's unite and make a lasting impact that uplifts lives and fosters growth."
+//     },
+//     {
+//         "name": "Avery Carter",
+//         "email": "avery@example.com",
+//         "designation": "Volunteer",
+//         "blood": "A+",
+//         "contact": "678-901-2345",
+//         "location": "New York, USA",
+//         "imageUrl": "https://i.ibb.co/601Sfgt/four.png",
+//         "blog_title": "Committed to Creating Positive Change",
+//         "blog_content": "Committed to creating a positive change through volunteer work. Let's inspire others to join our cause and make a meaningful impact."
+//     },
+//     {
+//         "name": "Logan Wright",
+//         "email": "logan@example.com",
+//         "designation": "Volunteer",
+//         "blood": "O-",
+//         "contact": "789-012-3456",
+//         "location": "Los Angeles, USA",
+//         "imageUrl": "https://i.ibb.co/VNsk4Tv/nine.png",
+//         "blog_title": "Joining the Volunteer Movement",
+//         "blog_content": "Join me in my journey to make a difference through volunteering. Together, we can create a world filled with kindness, empathy, and positive change."
+//     },
+//     {
+//         "name": "Luna Moore",
+//         "email": "luna@example.com",
+//         "designation": "Volunteer",
+//         "blood": "AB-",
+//         "contact": "890-123-4567",
+//         "location": "San Francisco, USA",
+//         "imageUrl": "https://i.ibb.co/hZ9DP1t/one.jpg",
+//         "blog_title": "Advocating for a Brighter Future",
+//         "blog_content": "Advocating for a brighter future through volunteer work. Let's collaborate and create a world where compassion and positive impact thrive."
+//     },
+//     {
+//         "name": "Mateo Lopez",
+//         "email": "mateo@example.com",
+//         "designation": "Volunteer",
+//         "blood": "A-",
+//         "contact": "901-234-5678",
+//         "location": "Seattle, USA",
+//         "imageUrl": "https://i.ibb.co/PG77kbW/seven.jpg",
+//         "blog_title": "Dedicated to Positive Impact",
+//         "blog_content": "Dedicated to volunteerism and its power to bring about positive change. Together, we can create a more compassionate and inclusive society."
+//     }
+// ]
+
+
+
+// //   donator ================================
+
+
+// [
+//     {
+//         "name": "Alex Turner",
+//         "email": "alex@example.com",
+//         "designation": "Donator",
+//         "blood": "A+",
+//         "contact": "123-456-7890",
+//         "location": "New York, USA",
+//         "imageUrl": "https://i.ibb.co/hKGfN3z/eleven.png",
+//         "blog_title": "Committed to Positive Change",
+//         "blog_content": "Committed to supporting causes that matter. Let's make a difference by contributing to organizations that create positive change in society."
+//     },
+//     {
+//         "name": "Ella Mitchell",
+//         "email": "ella@example.com",
+//         "designation": "Donator",
+//         "blood": "O-",
+//         "contact": "987-654-3210",
+//         "location": "Los Angeles, USA",
+//         "imageUrl": "https://i.ibb.co/sgW4YgY/eignt.png",
+//         "blog_title": "Believing in Giving Back",
+//         "blog_content": "Believes in the power of giving back. Join me in supporting initiatives that impact lives and make the world a better place."
+//     },
+//     {
+//         "name": "Jackson Baker",
+//         "email": "jackson@example.com",
+//         "designation": "Donator",
+//         "blood": "B+",
+//         "contact": "555-123-4567",
+//         "location": "San Francisco, USA",
+//         "imageUrl": "https://i.ibb.co/YtWDPX5/five.png",
+//         "blog_title": "Contributing to Positive Change",
+//         "blog_content": "Contributing to positive change through financial support. Together, we can provide resources that drive meaningful impact and growth."
+//     },
+//     {
+//         "name": "Olivia Ward",
+//         "email": "olivia@example.com",
+//         "designation": "Donator",
+//         "blood": "AB-",
+//         "contact": "789-456-1230",
+//         "location": "Chicago, USA",
+//         "imageUrl": "https://i.ibb.co/601Sfgt/four.png",
+//         "blog_title": "Supporting Lasting Change",
+//         "blog_content": "Supporting organizations that make a difference. Let's stand together and provide the means to create lasting change in the lives of others."
+//     },
+//     {
+//         "name": "Lucas Turner",
+//         "email": "lucas@example.com",
+//         "designation": "Donator",
+//         "blood": "A-",
+//         "contact": "234-567-8901",
+//         "location": "Houston, USA",
+//         "imageUrl": "https://i.ibb.co/VNsk4Tv/nine.png",
+//         "blog_title": "Believing in Giving Back",
+//         "blog_content": "Believing in the importance of giving back. Together, we can contribute to causes that uplift and empower communities worldwide."
+//     },
+//     {
+//         "name": "Aria Foster",
+//         "email": "aria@example.com",
+//         "designation": "Donator",
+//         "blood": "B-",
+//         "contact": "890-123-4567",
+//         "location": "Miami, USA",
+//         "imageUrl": "https://i.ibb.co/hZ9DP1t/one.jpg",
+//         "blog_title": "Donations for Positive Change",
+//         "blog_content": "Every donation counts towards positive change. Join me in supporting impactful initiatives that bring about meaningful transformations."
+//     },
+//     {
+//         "name": "Henry Scott",
+//         "email": "henry@example.com",
+//         "designation": "Donator",
+//         "blood": "O+",
+//         "contact": "456-789-0123",
+//         "location": "Seattle, USA",
+//         "imageUrl": "https://i.ibb.co/PG77kbW/seven.jpg",
+//         "blog_title": "Empowering Through Support",
+//         "blog_content": "Empowering organizations through financial support. Let's make a difference by providing resources that drive change and progress."
+//     },
+//     {
+//         "name": "Victoria Gray",
+//         "email": "victoria@example.com",
+//         "designation": "Donator",
+//         "blood": "AB+",
+//         "contact": "567-890-1234",
+//         "location": "Denver, USA",
+//         "imageUrl": "https://i.ibb.co/zJgqMKx/six.png",
+//         "blog_title": "Giving for Positive Impact",
+//         "blog_content": "Believes in the power of giving to create positive impact. Together, we can support causes that drive positive change in society."
+//     },
+//     {
+//         "name": "Daniel Turner",
+//         "email": "daniel@example.com",
+//         "designation": "Donator",
+//         "blood": "B+",
+//         "contact": "678-901-2345",
+//         "location": "Portland, USA",
+//         "imageUrl": "https://i.ibb.co/TqW95Cs/ten.jpg",
+//         "blog_title": "Supporting Lasting Impact",
+//         "blog_content": "Supporting initiatives that make a lasting impact. Let's join forces to provide the means for growth and progress in our communities."
+//     },
+//     {
+//         "name": "Grace Williams",
+//         "email": "grace@example.com",
+//         "designation": "Donator",
+//         "blood": "A+",
+//         "contact": "789-012-3456",
+//         "location": "Austin, USA",
+//         "imageUrl": "https://i.ibb.co/YtWDPX5/five.png",
+//         "blog_title": "Contributing to a Brighter Future",
+//         "blog_content": "Contributing to positive change through financial support. Together, we can make a difference and create a brighter future for all."
+//     },
+//     {
+//         "name": "Carter Hall",
+//         "email": "carter@example.com",
+//         "designation": "Donator",
+//         "blood": "O-",
+//         "contact": "890-123-4567",
+//         "location": "Boston, USA",
+//         "imageUrl": "https://i.ibb.co/PG77kbW/seven.jpg",
+//         "blog_title": "Believing in Lasting Impact",
+//         "blog_content": "Believes in the power of giving to create lasting impact. Join me in supporting causes that uplift and empower individuals and communities."
+//     },
+//     {
+//         "name": "Layla White",
+//         "email": "layla@example.com",
+//         "designation": "Donator",
+//         "blood": "AB-",
+//         "contact": "901-234-5678",
+//         "location": "Nashville, USA",
+//         "imageUrl": "https://i.ibb.co/TqW95Cs/ten.jpg",
+//         "blog_title": "Supporting Positive Change",
+//         "blog_content": "Supporting initiatives that drive positive change. Together, we can provide resources that uplift and create a better world for all."
+//     },
+//     {
+//         "name": "Christopher Martinez",
+//         "email": "christopher@example.com",
+//         "designation": "Donator",
+//         "blood": "A-",
+//         "contact": "123-456-7890",
+//         "location": "Phoenix, USA",
+//         "imageUrl": "https://i.ibb.co/zJgqMKx/six.png",
+//         "blog_title": "Believing in Making a Difference",
+//         "blog_content": "Believing in the importance of giving to make a difference. Together, we can create positive change that resonates within our communities."
+//     },
+//     {
+//         "name": "Penelope Anderson",
+//         "email": "penelope@example.com",
+//         "designation": "Donator",
+//         "blood": "B-",
+//         "contact": "234-567-8901",
+//         "location": "Atlanta, USA",
+//         "imageUrl": "https://i.ibb.co/PG77kbW/seven.jpg",
+//         "blog_title": "Supporting Positive Transformation",
+//         "blog_content": "Supporting organizations that drive positive change. Let's stand together and make a lasting impact on the lives of those in need."
+//     },
+//     {
+//         "name": "Gabriel Wilson",
+//         "email": "gabriel@example.com",
+//         "designation": "Donator",
+//         "blood": "A+",
+//         "contact": "345-678-9012",
+//         "location": "Dallas, USA",
+//         "imageUrl": "https://i.ibb.co/hZ9DP1t/one.jpg",
+//         "blog_title": "Contributing to Impactful Initiatives",
+//         "blog_content": "Contributing to impactful initiatives through financial support. Together, we can create positive transformations that shape a better future."
+//     },
+//     {
+//         "name": "Scarlett Lee",
+//         "email": "scarlett@example.com",
+//         "designation": "Donator",
+//         "blood": "AB+",
+//         "contact": "456-789-0123",
+//         "location": "Miami, USA",
+//         "imageUrl": "https://i.ibb.co/VNsk4Tv/nine.png",
+//         "blog_title": "Believing in Positive Change",
+//         "blog_content": "Believes in the power of giving to create positive change. Join me in supporting initiatives that uplift and make a lasting impact."
+//     },
+//     {
+//         "name": "Benjamin Adams",
+//         "email": "benjamin@example.com",
+//         "designation": "Donator",
+//         "blood": "B+",
+//         "contact": "567-890-1234",
+//         "location": "Chicago, USA",
+//         "imageUrl": "https://i.ibb.co/601Sfgt/four.png",
+//         "blog_title": "Empowering Through Financial Support",
+//         "blog_content": "Empowering organizations through financial support. Together, we can drive positive change and create a brighter future for all."
+//     },
+//     {
+//         "name": "Chloe Carter",
+//         "email": "chloe@example.com",
+//         "designation": "Donator",
+//         "blood": "A+",
+//         "contact": "678-901-2345",
+//         "location": "New York, USA",
+//         "imageUrl": "https://i.ibb.co/YtWDPX5/five.png",
+//         "blog_title": "Contributing to Positive Impact",
+//         "blog_content": "Contributing to initiatives that create positive impact. Let's make a difference and support causes that resonate with our values."
+//     },
+//     {
+//         "name": "Mason Wright",
+//         "email": "mason@example.com",
+//         "designation": "Donator",
+//         "blood": "O-",
+//         "contact": "789-012-3456",
+//         "location": "Los Angeles, USA",
+//         "imageUrl": "https://i.ibb.co/sgW4YgY/eignt.png",
+//         "blog_title": "Believes in Giving Back",
+//         "blog_content": "Believes in giving back to create positive change. Join me in supporting organizations that drive meaningful impact and growth."
+//     },
+//     {
+//         "name": "Aurora Lopez",
+//         "email": "aurora@example.com",
+//         "designation": "Donator",
+//         "blood": "AB-",
+//         "contact": "890-123-4567",
+//         "location": "San Francisco, USA",
+//         "imageUrl": "https://i.ibb.co/hKGfN3z/eleven.png",
+//         "blog_title": "Supporting Initiatives for Change",
+//         "blog_content": "Supporting initiatives that make a difference. Let's unite and provide the means for positive change in the lives of others."
+//     }
+// ]
+
+  
